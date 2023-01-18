@@ -1,0 +1,30 @@
+.add-cell {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50px;
+    opacity: 0;
+    transition: opacity 200ms ease-in-out 100ms;
+}
+
+.add-cell:hover,
+.add-cell.is-visible {
+    opacity: 1;
+}
+
+.add-cell:active {
+    opacity: 0 !important;
+    transition: opacity 0s;
+}
+.add-cell .add-cell-divider {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    translateX: -50%;
+    height: 2px;
+    width: 100%;
+    background-color: #37414b;
+    z-index: -1;
+}
